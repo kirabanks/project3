@@ -79,6 +79,11 @@ textarea {
 
 /* -------------------------------- */
 
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 header {
     width: 100%;
     background-color: #2d3945;
@@ -103,6 +108,8 @@ https://codepen.io/zackw/pen/NqWgPq */
     height: 10px;
     border-top: 5px solid #2d3945;
     border-bottom: 2px solid #2d3945;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 fieldset {
@@ -178,4 +185,29 @@ footer p {
     font-weight: 400;
     font-style: italic;
     padding-bottom: 200px;
+}
+
+/* ----------------- MEDIA QUERIES ----------------- */
+
+@media screen and (min-width:768px) {
+
+    .contactInfo {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contactInfo label {
+        width: 25%;
+        margin: 15px 0;
+    }
+
+    .contactInfo input,
+    .contactInfo select {
+        width: 75%;
+        margin: 10px 0;
+    }
+
+    #zipcode {
+        width: 25%;
+    }
 }
