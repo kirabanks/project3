@@ -15,11 +15,15 @@
             <h1>THE CODE REVIEW</h1>
         </header>
         <main>
-            <h2>Signup for our newsletter</h2>
-            <p>Get the latest news on how your code is doing right in your inbox.</p>
+            <div class="signupInfo">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox.</p>
+            </div>
+
+            <hr class="hr-1">
 
             <form>
-                <fieldset>
+                <fieldset class="contactInfo">
                     <legend>Contact Information</legend>
 
                     <label for="name">Full Name</label>
@@ -98,31 +102,42 @@
                     <input type="text" id="zipcode" name="zipcode">
                 </fieldset>
 
-                <fieldset>
+                <hr class="hr-2">
+
+                <fieldset class="newsletterInfo">
                     <legend>Newsletter</legend>
                     
                     <label>Select the newsletters you would like to recieve:</label>
-                    <input type="checkbox" id="htmlNews" value="htmlNews" name="newsletter">
-                    <label for="htmlNews">HTML News</label>
-                    <br>
-                    <input type="checkbox" id="cssNews" value="cssNews" name="newsletter">
-                    <label for="cssNews">CSS News</label>
-                    <br>
-                    <input type="checkbox" id="javaNews" value="javaNews" name="newsletter">
-                    <label for="javaNews">Javascript News</label>
+
+                    <div class="newsletterSelections">
+                        <input type="checkbox" id="htmlNews" value="htmlNews" name="newsletter">
+                        <label for="htmlNews" class="selectLabel">HTML News</label>
+                        <br>
+                        
+                        <input type="checkbox" id="cssNews" value="cssNews" name="newsletter">
+                        <label for="cssNews" class="selectLabel">CSS News</label>
+                        <br>
+                        
+                        <input type="checkbox" id="javaNews" value="javaNews" name="newsletter">
+                        <label for="javaNews" class="selectLabel">Javascript News</label>
+                    </div>
 
                     <label>Newsletter Format:</label>
-                    <input type="radio" id="htmlFormat" value="htmlFormat" name="emailFormat">
-                    <label for="htmlFormat">HTML</label>
-                    <br>
-                    <input type="radio" id="plaintextFormat" value="plaintextFormat" name="emailFormat">
-                    <label for="plaintextFormat">Plain Text</label>
+
+                    <div class="newsletterSelections">
+                        <input type="radio" id="htmlFormat" value="htmlFormat" name="emailFormat">
+                        <label for="htmlFormat" class="selectLabel">HTML</label>
+                        <br>
+                        
+                        <input type="radio" id="plaintextFormat" value="plaintextFormat" name="emailFormat">
+                        <label for="plaintextFormat" class="selectLabel">Plain Text</label>
+                    </div>
 
                     <label for="otherTopics">Other topics you'd like to hear about:</label>
                     <textarea id="otherTopics" name="otherTopics"></textarea>
-                </fieldset>
 
-                <button type="submit">Sign Up</button>
+                    <button type="submit">Sign Up</button>
+                </fieldset>
             </form>
         </main>
         <footer>

@@ -3,9 +3,11 @@
     margin: 0;
 }
 
-header {
-    width: 100%;
-    background-color: #2d3945;
+body,
+::placeholder,
+option,
+button {
+    font-family: 'Merriweather', serif;
 }
 
 main,
@@ -14,7 +16,166 @@ footer {
     margin: 0 auto;
 }
 
+h1,
+legend,
+button {
+    font-weight: 900;
+}
+
+h1,
+.signupInfo,
+footer p {
+    text-align: center;
+}
+
+h1,
+.signupInfo {
+    padding: 30px 0;
+}
+
+.signupInfo h2,
+legend,
+option {
+    color: #2d3945;
+    font-size: 1.2em;
+}
+
+p,
+label,
+::placeholder {
+    font-size: .9em;
+}
+
+.contactInfo,
+.newsletterInfo {
+    display: flex;
+    padding: 0;
+}
+
+.contactInfo input,
+select,
+textarea,
+button {
+    border: none;
+    border-radius: 5px;
+}
+
+.contactInfo input,
+select,
+textarea {
+    background-color: #e4e4e4;
+}
+
+.contactInfo input,
+select,
+button {
+    height: 50px;
+}
+
+.contactInfo input,
+textarea {
+    padding: 20px;
+}
+
+/* -------------------------------- */
+
+header {
+    width: 100%;
+    background-color: #2d3945;
+}
+
 h1 {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.25em;
+}
+
+p {
+    color: rgb(133, 133, 133);
+}
+
+.signupInfo p {
+    padding-top: 10px;
+}
+
+/* How to style <hr> tag 
+https://codepen.io/zackw/pen/NqWgPq */
+.hr-1 {
+    height: 10px;
+    border-top: 5px solid #2d3945;
+    border-bottom: 2px solid #2d3945;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    padding: 20px 0 20px 0;
+}
+
+label {
+    color: rgb(95, 95, 95);
+}
+
+.contactInfo {
+    flex-direction: column;
+}
+
+.contactInfo label {
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+::placeholder {
+    color: rgb(146, 146, 146);
+    font-style: italic;
+    text-align: right;
+}
+
+select {
+    padding: 0 20px;
+}
+
+#zipcode {
+    width: 50%;
+}
+
+.hr-2 {
+    border:1px solid #2d3945;
+    margin: 30px 0 10px 0;
+}
+
+.newsletterInfo {
+    flex-direction: column;
+}
+
+.newsletterSelections {
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.newsletterInfo label {
+    padding-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #4cbbb4;
+    margin: 30px 0;
+    color: white;
+    font-size: 1em;
+}
+
+footer p {
+    font-weight: 400;
+    font-style: italic;
+    padding-bottom: 200px;
 }
