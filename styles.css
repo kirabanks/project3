@@ -140,6 +140,7 @@ https://codepen.io/zackw/pen/NqWgPq */
 
 fieldset {
     border: none;
+    padding: 0;
 }
 
 legend {
