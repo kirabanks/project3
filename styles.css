@@ -85,15 +85,12 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: 3px solid #46698b;
-}
-
-.contactInfo input {
-    transition: background-color 500ms linear;
-}
-
-.contactInfo input:focus {
     background-color: #46698b;
     color: white;
+}
+
+input, select. textarea {
+    transition: background-color 500ms linear;
 }
 
 button:focus {
