@@ -89,7 +89,7 @@ button:focus {
     color: white;
 }
 
-input, select. textarea {
+input, select, textarea {
     transition: background-color 500ms linear;
 }
 
